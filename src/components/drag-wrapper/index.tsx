@@ -24,17 +24,17 @@ const DragWrapper = (props: Props) => {
 
                     listeners: {
                         move: dragMoveListener,
-                        end: (event) => {
-                            const textEl = event.target.querySelector('p');
+                        // end: (event) => {
+                        //     const textEl = event.target.querySelector('p');
 
-                            if (textEl) {
-                                textEl.textContent =
-                                    'moved a distance of ' +
-                                    (Math.sqrt(Math.pow(event.pageX - event.x0, 2) +
-                                        Math.pow(event.pageY - event.y0, 2) | 0))
-                                        .toFixed(2) + 'px';
-                            }
-                        }
+                        //     if (textEl) {
+                        //         textEl.textContent =
+                        //             'moved a distance of ' +
+                        //             (Math.sqrt(Math.pow(event.pageX - event.x0, 2) +
+                        //                 Math.pow(event.pageY - event.y0, 2) | 0))
+                        //                 .toFixed(2) + 'px';
+                        //     }
+                        // }
                     }
                 });
         }

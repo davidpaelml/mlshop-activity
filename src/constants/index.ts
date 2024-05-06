@@ -1,6 +1,8 @@
+import { DescriptionProps } from "@/interfaces";
+
 type NoteProps = {
   tagname: string;
-  description?: string;
+  description?: DescriptionProps;
 };
 
 const notes: NoteProps[] = [

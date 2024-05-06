@@ -1,10 +1,11 @@
 'use client'
 
+import { DescriptionProps } from "@/interfaces";
 import { Dispatch, ReactNode, SetStateAction, createContext, useContext, useState } from "react"
 
 type NotePops = {
     tagname: string;
-    description?: string;
+    description?: DescriptionProps;
 }
 
 type NoteContextProps = {
