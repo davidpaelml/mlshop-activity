@@ -1,13 +1,4 @@
-import { DescriptionProps } from "@/interfaces";
+import notes from "./notes";
+import url from "./url";
 
-type NoteProps = {
-  tagname: string;
-  description?: DescriptionProps;
-};
-
-const notes: NoteProps[] = [
-  { tagname: "Header" },
-  { tagname: "Profile" },
-  { tagname: "Login" },
-  { tagname: "HINT" },
-];
+export { url, notes };

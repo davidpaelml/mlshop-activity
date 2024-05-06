@@ -3,6 +3,7 @@ import DragWrapper from "./drag-wrapper";
 import Dropzone from "./drop-zone";
 import Footer from "./footer";
 import Header from "./header";
+import Logo from "./logo";
 
 
 export {
@@ -10,5 +11,6 @@ export {
     Dropzone,
     Card,
     Header,
-    Footer
+    Footer,
+    Logo
 }
