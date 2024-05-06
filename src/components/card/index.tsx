@@ -2,11 +2,11 @@ import React, { useMemo } from 'react'
 
 type Props = {
   tagname?: string;
-  discription?: string;
+  description?: string;
 }
 
 const Card = (props: Props) => {
-  const { discription, tagname } = props
+  const { description, tagname } = props
 
   const renderComponent = useMemo(() => {
     if (!tagname) {
@@ -14,14 +14,14 @@ const Card = (props: Props) => {
         <div className='text-xl font-bold'>
           Card
         </div>
-        {!discription && (
+        {!description && (
           <div className=''>
-            discription
+            description
           </div>
         )}
       </div>)
     }
-  }, [discription, tagname])
+  }, [description, tagname])
   return (
     <>
       {renderComponent}
