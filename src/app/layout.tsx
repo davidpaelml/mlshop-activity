@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
 import "./globals.css";
 import SubLayout from "./sub-layout";
+import NoteProvider from "@/contexts/NoteProvider";
 
 const poppins = Poppins({ subsets: ["latin"], weight: ["200", "400", "500"] });
 
@@ -18,9 +19,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={poppins.className}>
-        <SubLayout>
-          {children}
-        </SubLayout>
+        <NoteProvider>
+          <SubLayout>
+            {children}
+          </SubLayout>
+        </NoteProvider>
+
       </body>
     </html>
   );

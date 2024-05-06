@@ -11,10 +11,10 @@ const Card = (props: Props) => {
   const renderComponent = useMemo(() => {
     if (!tagname) {
       return (<div className=''>
-        <div className='text-xl font-bold '>
+        <div className='text-xl font-bold'>
           Card
         </div>
-        {discription && (
+        {!discription && (
           <div className=''>
             discription
           </div>
